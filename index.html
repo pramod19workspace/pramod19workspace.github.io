@@ -286,7 +286,6 @@
   .progress-fill {
     height: 100%;
     background: linear-gradient(90deg, var(--green-deep), var(--green));
-    width: 12%;
     box-shadow: 0 0 12px var(--green);
     position: absolute;
     left: 0; top: 0;
@@ -483,9 +482,6 @@
     box-shadow: 0 0 20px rgba(0,255,156,0.4);
     transform: translateY(-1px);
   }
-  .btn.primary {
-    background: rgba(0,255,156,0.08);
-  }
 
   /* ============ FOOTER ============ */
   footer {
@@ -577,31 +573,31 @@
       </div>
       <div class="status-row">
         <span class="label">  current focus:</span>
-        <span class="value">Networking &amp; Shell Scripting</span>
+        <span class="value">Git &amp; Version Control</span>
       </div>
       <div class="status-row">
         <span class="label">  week:</span>
-        <span class="value">Week 2 of the journey</span>
+        <span class="value">Week 3 of the journey</span>
       </div>
       <div class="status-row">
         <span class="label">  topics covered:</span>
-        <span class="value">IP, DNS, HTTP/HTTPS, curl, wget, ss, traceroute, /etc/hosts, bash scripting (variables, loops, functions), sysinfo.sh</span>
+        <span class="value">Linux, networking, shell scripting (36+ scripts), Git (branching, merge conflicts, stash, revert, reset, PRs), health-check.sh, disk-monitor.sh, service-check.sh</span>
       </div>
       <div class="status-row">
         <span class="label">  next up:</span>
-        <span class="value">Git &amp; GitHub → Docker → CI/CD</span>
+        <span class="value">Docker → CI/CD → AWS</span>
       </div>
       <div class="progress-wrap">
         <div class="progress-track">
-          <div class="progress-fill" style="width: 22%"></div>
-          <div class="progress-label">[██████░░░░░░░░░░░░░░░░░░░░░░░░] LINUX — IN PROGRESS</div>
+          <div class="progress-fill" style="width: 30%"></div>
+          <div class="progress-label">[█████████░░░░░░░░░░░░░░░░░░░░░] FOUNDATION — WEEK 3</div>
         </div>
       </div>
     </div>
   </div>
 </section>
 
-<!-- ================ SKILLS ================ -->
+<!-- ================ SKILLS ============== -->
 <section id="skills">
   <div class="container">
     <div class="section-header">
@@ -612,24 +608,27 @@
 
       <div class="skill-card">
         <div class="skill-name">Linux <span class="status-dot"></span></div>
-        <div class="skill-bar"><div class="skill-bar-fill" style="width: 40%"></div></div>
+        <div class="skill-bar"><div class="skill-bar-fill" style="width: 55%"></div></div>
         <div class="skill-meta">
           <span>learning</span>
-          <span>week 1–2</span>
+          <span>week 1–3</span>
         </div>
         <div class="skill-tags">
-          <span class="tag">htop</span>
+          <span class="tag">chmod</span>
+          <span class="tag">chown</span>
           <span class="tag">usermod</span>
           <span class="tag">/etc/passwd</span>
           <span class="tag">processes</span>
           <span class="tag">/etc/hosts</span>
           <span class="tag">systemctl</span>
+          <span class="tag">htop</span>
+          <span class="tag">nginx</span>
         </div>
       </div>
 
       <div class="skill-card">
         <div class="skill-name">Networking <span class="status-dot"></span></div>
-        <div class="skill-bar"><div class="skill-bar-fill" style="width: 30%"></div></div>
+        <div class="skill-bar"><div class="skill-bar-fill" style="width: 40%"></div></div>
         <div class="skill-meta">
           <span>learning</span>
           <span>week 2</span>
@@ -644,15 +643,16 @@
           <span class="tag">traceroute</span>
           <span class="tag">DNS</span>
           <span class="tag">HTTP/HTTPS</span>
+          <span class="tag">ports</span>
         </div>
       </div>
 
       <div class="skill-card">
         <div class="skill-name">Shell Scripting <span class="status-dot"></span></div>
-        <div class="skill-bar"><div class="skill-bar-fill" style="width: 25%"></div></div>
+        <div class="skill-bar"><div class="skill-bar-fill" style="width: 45%"></div></div>
         <div class="skill-meta">
           <span>learning</span>
-          <span>week 2</span>
+          <span>week 2–3</span>
         </div>
         <div class="skill-tags">
           <span class="tag">variables</span>
@@ -660,14 +660,32 @@
           <span class="tag">for loops</span>
           <span class="tag">while loops</span>
           <span class="tag">functions</span>
-          <span class="tag">sysinfo.sh</span>
+          <span class="tag">arguments</span>
+          <span class="tag">health-check.sh</span>
+          <span class="tag">disk-monitor.sh</span>
+          <span class="tag">piping</span>
         </div>
       </div>
 
-      <!--
-        Pramod: as you learn new tools, copy this block and fill it in.
-        Keep it honest - only add a card when you've actually used the tool.
-      -->
+      <div class="skill-card">
+        <div class="skill-name">Git &amp; GitHub <span class="status-dot"></span></div>
+        <div class="skill-bar"><div class="skill-bar-fill" style="width: 35%"></div></div>
+        <div class="skill-meta">
+          <span>learning</span>
+          <span>week 3</span>
+        </div>
+        <div class="skill-tags">
+          <span class="tag">init</span>
+          <span class="tag">commit</span>
+          <span class="tag">branch</span>
+          <span class="tag">merge</span>
+          <span class="tag">conflicts</span>
+          <span class="tag">stash</span>
+          <span class="tag">revert</span>
+          <span class="tag">reset</span>
+          <span class="tag">pull requests</span>
+        </div>
+      </div>
 
     </div>
 
@@ -688,54 +706,66 @@
 
       <div class="roadmap-item done">
         <div class="roadmap-stage">STAGE 01</div>
-        <div class="roadmap-title">Linux Fundamentals <span class="roadmap-status status-done">WEEK 1</span></div>
+        <div class="roadmap-title">Linux Fundamentals <span class="roadmap-status status-done">WEEK 1–2</span></div>
         <div class="roadmap-desc">File system, processes, users &amp; permissions, shell basics, system internals.</div>
       </div>
 
-      <div class="roadmap-item current">
+      <div class="roadmap-item done">
         <div class="roadmap-stage">STAGE 02</div>
-        <div class="roadmap-title">Shell Scripting &amp; Git <span class="roadmap-status status-current">IN PROGRESS</span></div>
-        <div class="roadmap-desc">Bash scripting, automation, version control with Git &amp; GitHub workflows.</div>
+        <div class="roadmap-title">Networking <span class="roadmap-status status-done">WEEK 2</span></div>
+        <div class="roadmap-desc">IP, DNS, HTTP/HTTPS, ports, curl, traceroute, /etc/hosts, API calls.</div>
+      </div>
+
+      <div class="roadmap-item done">
+        <div class="roadmap-stage">STAGE 03</div>
+        <div class="roadmap-title">Shell Scripting <span class="roadmap-status status-done">WEEK 2–3</span></div>
+        <div class="roadmap-desc">Bash scripting, automation, variables, loops, functions, real monitoring scripts.</div>
       </div>
 
       <div class="roadmap-item current">
-        <div class="roadmap-stage">STAGE 03</div>
-        <div class="roadmap-title">Networking &amp; Cloud Basics <span class="roadmap-status status-current">IN PROGRESS</span></div>
-        <div class="roadmap-desc">DNS, HTTP, SSH, firewalls, intro to AWS core services.</div>
+        <div class="roadmap-stage">STAGE 04</div>
+        <div class="roadmap-title">Git &amp; Version Control <span class="roadmap-status status-current">IN PROGRESS</span></div>
+        <div class="roadmap-desc">Branching, merge conflicts, stash, revert, reset, pull requests, GitHub workflows.</div>
       </div>
 
       <div class="roadmap-item">
-        <div class="roadmap-stage">STAGE 04</div>
+        <div class="roadmap-stage">STAGE 05</div>
         <div class="roadmap-title">Docker &amp; Containerization <span class="roadmap-status status-pending">QUEUED</span></div>
         <div class="roadmap-desc">Containers, images, Dockerfiles, docker-compose, registries.</div>
       </div>
 
       <div class="roadmap-item">
-        <div class="roadmap-stage">STAGE 05</div>
-        <div class="roadmap-title">CI/CD with Jenkins &amp; GitHub Actions <span class="roadmap-status status-pending">QUEUED</span></div>
+        <div class="roadmap-stage">STAGE 06</div>
+        <div class="roadmap-title">CI/CD with GitHub Actions <span class="roadmap-status status-pending">QUEUED</span></div>
         <div class="roadmap-desc">Pipelines, build/test/deploy automation, real-world workflows.</div>
       </div>
 
       <div class="roadmap-item">
-        <div class="roadmap-stage">STAGE 06</div>
+        <div class="roadmap-stage">STAGE 07</div>
+        <div class="roadmap-title">AWS Cloud <span class="roadmap-status status-pending">QUEUED</span></div>
+        <div class="roadmap-desc">EC2, S3, IAM, VPC, RDS, Lambda, CloudWatch — core services.</div>
+      </div>
+
+      <div class="roadmap-item">
+        <div class="roadmap-stage">STAGE 08</div>
         <div class="roadmap-title">Infrastructure as Code — Terraform <span class="roadmap-status status-pending">QUEUED</span></div>
         <div class="roadmap-desc">Provisioning cloud infrastructure declaratively, state, modules.</div>
       </div>
 
       <div class="roadmap-item">
-        <div class="roadmap-stage">STAGE 07</div>
+        <div class="roadmap-stage">STAGE 09</div>
         <div class="roadmap-title">Configuration Management — Ansible <span class="roadmap-status status-pending">QUEUED</span></div>
         <div class="roadmap-desc">Playbooks, roles, idempotent server configuration at scale.</div>
       </div>
 
       <div class="roadmap-item">
-        <div class="roadmap-stage">STAGE 08</div>
+        <div class="roadmap-stage">STAGE 10</div>
         <div class="roadmap-title">Kubernetes <span class="roadmap-status status-pending">QUEUED</span></div>
-        <div class="roadmap-desc">Pods, deployments, services, ingress, real cluster operations.</div>
+        <div class="roadmap-desc">Pods, deployments, services, ingress, EKS, real cluster operations.</div>
       </div>
 
       <div class="roadmap-item">
-        <div class="roadmap-stage">STAGE 09</div>
+        <div class="roadmap-stage">STAGE 11</div>
         <div class="roadmap-title">Monitoring &amp; Observability <span class="roadmap-status status-pending">QUEUED</span></div>
         <div class="roadmap-desc">Prometheus, Grafana, logging, alerting, SRE principles.</div>
       </div>
@@ -766,7 +796,7 @@
 <footer>
   <div class="container">
     <div>built with <span class="heart">♥</span> &nbsp;·&nbsp; pramod &nbsp;·&nbsp; <span id="year"></span></div>
-    <div style="margin-top: 8px; opacity: 0.6;">// this site is part of the journey — last updated: week 2</div>
+    <div style="margin-top: 8px; opacity: 0.6;">// this site is part of the journey — last updated: week 3</div>
   </div>
 </footer>
 
@@ -785,11 +815,11 @@
     { type: 'cmd', text: 'cat /etc/role' },
     { type: 'out', text: 'DevOps Engineer (in the making)', cls: 'accent' },
     { type: 'cmd', text: 'uptime --learning' },
-    { type: 'out', text: 'week 2  ·  focus: networking + shell scripting  ·  status: shipping weekly' },
+    { type: 'out', text: 'week 3  ·  focus: git + version control  ·  status: shipping weekly' },
     { type: 'cmd', text: 'echo $MISSION' },
     { type: 'out', text: '"transition into devops by building, breaking, and documenting — publicly."', cls: 'dim' },
-    { type: 'cmd', text: 'ls ./next-steps/' },
-    { type: 'out', text: 'git   docker   jenkins   aws   terraform   k8s', cls: 'bright' },
+    { type: 'cmd', text: 'git log --oneline | head -1' },
+    { type: 'out', text: 'fb3c551 36+ scripts pushed · merge conflicts resolved · PRs merged', cls: 'bright' },
     { type: 'cmd', text: '_', final: true }
   ];
 
@@ -837,9 +867,6 @@
 
   // Kick off after a short delay
   setTimeout(typeNext, 500);
-
-  // ============ Smooth nav highlight on scroll (subtle) ============
-  // Optional polish — could be added later
 </script>
 
 </body>
